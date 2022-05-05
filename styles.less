@@ -1,0 +1,253 @@
+// /*
+//  * Your Stylesheet
+//  *
+//  * This stylesheet is loaded when Atom starts up and is reloaded automatically
+//  * when it is changed and saved.
+//  *
+//  * Add your own CSS or Less to fully customize Atom.
+//  * If you are unfamiliar with Less, you can read more about it here:
+//  * http://lesscss.org
+//  */
+//
+//
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  color: white;
+  background-color: hsl(0, 0, 0);
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  // border-color: red;
+}
+
+.editor {
+   -webkit-font-smoothing: auto;
+ }
+
+.tree-view {
+   -webkit-font-smoothing: auto;
+ }
+
+// comment.line.percentage.matlab
+// .syntax--comment.syntax--line.syntax--percentage.syntax--matlab
+// .source.ruby.rails
+// .syntax--matlab
+
+// .syntax--source.syntax--ruby.syntax--rails {
+//  font-weight: bold;
+//  font-style: italic;
+// }
+
+// .syntax--punctuation {
+//  font-weight: lighter;
+//  font-size: 1em;
+//  color: #FE58A2;
+// }
+
+.syntax--source.syntax--ruby.syntax--embedded.syntax--erb {
+  font-style: normal;
+}
+
+.syntax--punctuation.syntax--operator.syntax--assignment {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FE58A2;
+}
+
+.syntax--keyword.syntax--operator.syntax--assignment {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+[class*="punctuation"] {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FE58A2;
+}
+
+.syntax--punctuation.syntax--terminator,
+.syntax--punctuation.syntax--terminator.syntax--statement.syntax--js,
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--js,
+.syntax--punctuation.syntax--section.syntax--scope,
+ {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FE58A2;
+}
+
+.syntax--punctuation.syntax--definition.syntax--parameters {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FE58A2;
+}
+
+.syntax--punctuation.syntax--definition.syntax--arguments {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FE58A2;
+}
+
+.syntax--punctuation.syntax--terminator.syntax--rule.syntax--css {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FE58A2;
+}
+
+.syntax--meta.syntax--delimiter {
+ font-weight: bold;
+ color: #FFFFFF;
+}
+
+.syntax--keyword.syntax--operator.syntax--logical.syntax--ruby {
+  color: darken(#FE58A2, 37%);
+}
+
+.syntax--meta.syntax--brace, .syntax--meta.syntax--brace.syntax--curly,
+.syntax--meta.syntax--brace.syntax--square {
+ font-weight: bold;
+ font-size: 1em;
+ color: #FE58A2;
+}
+
+.syntax--meta.syntax--brace.syntax--round.syntax--js {
+  color: #FE58A2;
+}
+
+.syntax--punctuation.syntax--separator.syntax--method.syntax--ruby,
+.syntax--punctuation.syntax--definition.syntax--constant.syntax--ruby {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #FE58A2;
+}
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end {
+  font-weight: bolder;
+  font-size: 1em;
+  color:lighten(#FF8C00, 20%);
+}
+
+.syntax--punctuation.syntax--definition.syntax--string {
+ font-size: 1em;
+ color: #D4AF37;
+}
+
+.syntax--string.syntax--quoted.syntax--double.syntax--interpolated.syntax--ruby {
+  font-weight: normal;
+  color: #E6BE8A;
+}
+
+.syntax--punctuation.syntax--section.syntax--embedded {
+ font-weight: lighter;
+ color: #FF8C00;
+}
+
+.syntax--string.syntax--quoted.syntax--double {
+ font-weight: normal;
+ color: #FF8C00;
+}
+
+.syntax--punctuation.syntax--definition.syntax--function {
+ color: #FF8C00;
+}
+
+.syntax--string.syntax--quoted.syntax--other.syntax--ruby {
+  color: #E6BE8A;
+}
+
+.syntax--keyword.syntax--other.syntax--special-method {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-position: under;
+  text-decoration-color: rgba(255, 128, 128, 0.3);
+}
+
+.syntax--string.syntax--quoted.syntax--single {
+  color: #E6BE8A;
+}
+
+.syntax--keyword.syntax--control {
+  font-weight: 700;
+}
+
+.syntax--keyword.syntax--operator {
+  font-weight: bold;
+}
+
+.syntax--meta.syntax--embedded.syntax--line {
+  font-weight: bold;
+  // font-style: italic;
+}
+
+.syntax--support.syntax--class,
+.syntax--variable.syntax--other.syntax--constant.syntax--ruby,
+.syntax--punctuation.syntax--separator.syntax--namespace.syntax--ruby,
+.syntax--punctuation.syntax--definition.syntax--variable.syntax--ruby {
+  color: #9a002e;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: rgba(255, 128, 128, 0.3);
+}
+
+.syntax--comment.syntax--line,
+.syntax--comment.syntax--block.syntax--js {
+  color: lighten(#FF7F50, 23%);
+  background-color: lighten(#4b0082, 17%);
+  font-style: italic;
+}
+
+// this is comment?
+.syntax--punctuation.syntax--definition.syntax--comment {
+  color: #fff;
+  background-color: black;
+  font-weight: bolder;
+}
+
+.syntax--entity.syntax--name.syntax--function.syntax--ruby {
+  color: #dfc1f4;
+}
+
+.syntax--punctuation.syntax--section.syntax--array {
+  font-weight: lighter;
+  color: #FFFFFF;
+}
+
+.syntax--variable.syntax--other.syntax--block.syntax--ruby {
+  color: #e3daea;
+  font-weight: bolder;
+}
+
+.syntax--storage.syntax--type.syntax--class.syntax--fixme,
+.syntax--storage.syntax--type.syntax--class.syntax--todo {
+  font-style: italic;
+  color: pink;
+}
+
+.syntax--support.syntax--function.syntax--activerecord.syntax--rails {
+  color: #FF8C00;
+}
+
+.syntax--constant.syntax--other.syntax--symbol {
+  // background-size: 1px 1px;
+  // box-shadow:
+  //   inset 0 -0.1em #580b70,
+  //   inset 0 0.1em #580b70;
+
+  box-shadow: 2px #580b70;
+  // display: inline;
+}
+
+// workspace font
+atom-workspace {
+    font-family: "Dank Mono";
+}
